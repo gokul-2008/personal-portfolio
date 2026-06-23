@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gokul B | Full Stack Developer & Computer Science Engineering Student portfolio. Specialized in React.js, Node.js, Express.js, MongoDB, and AI Web Apps.">
+    <title>Gokul B | Full Stack Developer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Theme Prevention Flash Script -->
+    <script>
+        (function() {
+            const savedTheme = localStorage.getItem('portfolio-theme');
+            const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            } else {
+                document.documentElement.removeAttribute('data-theme');
+            }
+        })();
+    </script>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+
+    <header class="header">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <div class="logo-box">GB</div>
+                <span class="logo-text">Gokul B</span>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                
+                <!-- Mobile Menu Toggle Button -->
+                <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Main Container -->
+    <main class="main-content">
+        
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-grid">
+                    
+                    <!-- Hero Left: Copy/Details -->
+                    <div class="hero-content">
+                        <div class="pill-badge animate-fade-in">
+                            <span class="sparkle">✨</span> AVAILABLE FOR OPPORTUNITIES
+                        </div>
+                        <h1 class="hero-title animate-slide-up">
+                            Engineering <br>
+                            <span class="highlight">Future</span> <br>
+                            Solutions.
+                        </h1>
+                        <p class="hero-subtitle animate-slide-up">
+                            Hi, I'm <a href="#about" class="bold-underline">Gokul B</a>. I build intelligent web applications and AI-driven solutions that solve real-world problems.
+                        </p>
+                        
+                        <div class="hero-ctas animate-slide-up">
+                            <a href="#projects" class="btn btn-primary">
+                                Explore My Work <i class="fa-solid fa-chevron-right icon-right"></i>
+                            </a>
+                            <a href="#contact" class="btn btn-secondary">
+                                <i class="fa-regular fa-file-lines icon-left"></i> Get in Touch
+                            </a>
+                        </div>
+                        
+                        <div class="social-links animate-slide-up">
+                            <a href="https://github.com/gokul-2008" target="_blank" aria-label="GitHub" class="social-circle">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/gokul-b-6595ba37a/" target="_blank" aria-label="LinkedIn" class="social-circle">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="mailto:gokulbalraj08@gmail.com" aria-label="Email" class="social-circle">
+                                <i class="fa-regular fa-envelope"></i>
+                            </a>
+                            <a href="#skills" aria-label="Skills Arsenal" class="social-circle">
+                                <i class="fa-solid fa-code"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Hero Right: Avatar & Badge -->
+                    <div class="hero-image-wrapper animate-fade-in">
+                        <div class="hero-image-card">
+                            <img src="profesional photo.jpg" alt="Gokul B Professional Portrait">
+                            
+                            <!-- Overlapping Floating Badge -->
+                            <div class="floating-badge">
+                                <div class="badge-icon-box">
+                                    <i class="fa-solid fa-trophy"></i>
+                                </div>
+                                <div class="badge-info">
+                                    <span class="badge-label">NEURA GLOBAL</span>
+                                    <span class="badge-title">Full Stack Intern</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section scroll-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="header-icon-box">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <div class="header-title-box">
+                        <h2>About Me</h2>
+                        <p class="section-subtitle">My journey in the world of technology.</p>
+                    </div>
+                </div>
+                
+                <div class="about-card">
+                    <p class="about-text">
+                        I am a Computer Science Engineering student and Full Stack Developer passionate about building scalable web applications and AI-driven solutions. With hands-on experience in React.js, Node.js, Express.js, MongoDB, and modern development tools, I enjoy transforming ideas into real-world products.
+                    </p>
+                    <p class="about-text text-secondary">
+                        I have developed and deployed projects such as a Clinic Management Platform and an AI-powered Face Liveness Detection System, strengthening my skills in frontend development, backend APIs, database management, authentication, cloud deployment, and computer vision.
+                    </p>
+                    
+                    <div class="info-grid">
+                        <div class="info-subcard">
+                            <div class="subcard-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="subcard-details">
+                                <span class="subcard-label">LOCATION</span>
+                                <span class="subcard-value">Karur, Tamil Nadu, India</span>
+                            </div>
+                        </div>
+                        
+                        <div class="info-subcard">
+                            <div class="subcard-icon">
+                                <i class="fa-regular fa-envelope"></i>
+                            </div>
+                            <div class="subcard-details">
+                                <span class="subcard-label">CONTACT</span>
+                                <span class="subcard-value">gokulbalraj08@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Arsenal Section -->
+        <section id="skills" class="skills-section scroll-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="header-icon-box">
+                        <i class="fa-solid fa-microchip"></i>
+                    </div>
+                    <div class="header-title-box">
+                        <h2>Technical Arsenal</h2>
+                        <p class="section-subtitle">The tools and languages I use to bring ideas to life.</p>
+                    </div>
+                </div>
+                
+                <div class="skills-grid">
+                    <!-- Languages -->
+                    <div class="skills-column">
+                        <h3 class="column-title">LANGUAGES</h3>
+                        <div class="skills-badges">
+                            <span class="skill-badge">C</span>
+                            <span class="skill-badge">C++</span>
+                            <span class="skill-badge">Python</span>
+                            <span class="skill-badge">Java</span>
+                            <span class="skill-badge">JavaScript</span>
+                            <span class="skill-badge">SQL</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Frontend -->
+                    <div class="skills-column">
+                        <h3 class="column-title">FRONTEND</h3>
+                        <div class="skills-badges">
+                            <span class="skill-badge">HTML5</span>
+                            <span class="skill-badge">CSS3</span>
+                            <span class="skill-badge">JavaScript</span>
+                            <span class="skill-badge">React.js</span>
+                            <span class="skill-badge">Bootstrap</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Backend -->
+                    <div class="skills-column">
+                        <h3 class="column-title">BACKEND</h3>
+                        <div class="skills-badges">
+                            <span class="skill-badge">Node.js</span>
+                            <span class="skill-badge">Express.js</span>
+                            <span class="skill-badge">REST APIs</span>
+                            <span class="skill-badge">Authentication</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Databases & Tools -->
+                    <div class="skills-column">
+                        <h3 class="column-title">DATABASES & TOOLS</h3>
+                        <div class="skills-badges">
+                            <span class="skill-badge">MongoDB</span>
+                            <span class="skill-badge">MySQL</span>
+                            <span class="skill-badge">Git</span>
+                            <span class="skill-badge">GitHub</span>
+                            <span class="skill-badge">VS Code</span>
+                            <span class="skill-badge">Postman</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education-section scroll-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="header-icon-box">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <div class="header-title-box">
+                        <h2>Education</h2>
+                        <p class="section-subtitle">My academic background.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-list">
+                    <!-- College Card -->
+                    <div class="timeline-card">
+                        <div class="timeline-left">
+                            <h3 class="timeline-title">Bachelor of Engineering - Computer Science and Engineering</h3>
+                            <h4 class="timeline-institution">V.S.B. Engineering College, Karur, Tamil Nadu</h4>
+                            <p class="timeline-desc">Expected Graduation: 2029 | CGPA: 7.3/10.</p>
+                        </div>
+                        <div class="timeline-right">
+                            <span class="date-badge">2025 - 2029</span>
+                        </div>
+                    </div>
+                    
+                    <!-- School Card -->
+                    <div class="timeline-card">
+                        <div class="timeline-left">
+                            <h3 class="timeline-title">Higher Secondary (12th Grade)</h3>
+                            <h4 class="timeline-institution">Cheran Matriculation Higher Secondary School, Karur, Tamil Nadu</h4>
+                            <p class="timeline-desc">Score: 74.5%</p>
+                        </div>
+                        <div class="timeline-right">
+                            <span class="date-badge">2024 - 2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section scroll-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="header-icon-box">
+                        <i class="fa-regular fa-id-badge"></i>
+                    </div>
+                    <div class="header-title-box">
+                        <h2>Experience</h2>
+                        <p class="section-subtitle">Professional internships and industry exposure.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-list">
+                    <!-- Internship Card -->
+                    <div class="timeline-card">
+                        <div class="timeline-left">
+                            <h3 class="timeline-title">Full Stack Development Intern</h3>
+                            <h4 class="timeline-institution">Neura Global (Startup)</h4>
+                            <p class="timeline-desc">
+                                Completed a Full Stack Development Internship focused on modern web application development. Gained hands-on experience in React.js, Node.js, Express.js, MongoDB, Git, and GitHub.
+                            </p>
+                            <p class="timeline-desc text-secondary">
+                                Worked on developing and deploying real-world projects, implementing REST APIs, managing databases, and integrating frontend and backend systems. Enhanced problem-solving, debugging, and software development skills through project-based learning.
+                            </p>
+                        </div>
+                        <div class="timeline-right">
+                            <span class="date-badge">June 2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section scroll-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="header-icon-box">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div class="header-title-box">
+                        <h2>Projects</h2>
+                        <p class="section-subtitle">A showcase of some of my key developments.</p>
+                    </div>
+                </div>
+                
+                <div class="projects-grid">
+                    
+                    <!-- Project 1: Clinic Management Platform -->
+                    <div class="project-card">
+                        <div class="project-card-header">
+                            <div class="project-icon-wrapper">
+                                <i class="fa-solid fa-house-medical"></i>
+                            </div>
+                            <h3 class="project-title">Clinic Management Platform</h3>
+                        </div>
+                        <p class="project-description">
+                            A full-stack Clinic Management Platform designed to digitize and streamline healthcare operations. Includes role-based access control, patient & doctor management, appointment scheduling, stripe integration, and automated invoices.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">React.js</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">Express.js</span>
+                            <span class="project-tag">MongoDB Atlas</span>
+                            <span class="project-tag">Stripe</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/gokul-2008/Clinic-Management-Platform" target="_blank" class="project-link">
+                                <i class="fa-brands fa-github"></i> Source Code
+                            </a>
+                            <a href="https://clinic-management-platform.vercel.app" target="_blank" class="project-link link-demo">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2: VSB FaceGuard AI -->
+                    <div class="project-card">
+                        <div class="project-card-header">
+                            <div class="project-icon-wrapper">
+                                <i class="fa-solid fa-face-smile"></i>
+                            </div>
+                            <h3 class="project-title">VSB FaceGuard AI</h3>
+                        </div>
+                        <p class="project-description">
+                            AI-powered Face Liveness Detection and Attendance Management System. Detects blinks, smiles, head movements, and prevents spoofing. Replications utilize OpenCV, MediaPipe, and LBPH Face Recognition with real-time logs.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Flask</span>
+                            <span class="project-tag">OpenCV</span>
+                            <span class="project-tag">MediaPipe</span>
+                            <span class="project-tag">Face Recognition</span>
+                            <span class="project-tag">HTML/CSS/JS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/gokul-2008/VSB-FaceGuard-AI" target="_blank" class="project-link">
+                                <i class="fa-brands fa-github"></i> Source Code
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications-section scroll-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="header-icon-box">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <div class="header-title-box">
+                        <h2>Certifications</h2>
+                        <p class="section-subtitle">Continuous learning and professional growth.</p>
+                    </div>
+                </div>
+                
+                <div class="certifications-grid">
+                    <!-- Cert 1 -->
+                    <div class="certification-card">
+                        <div class="certification-icon-wrapper">
+                            <i class="fa-solid fa-award" style="color: var(--primary);"></i>
+                        </div>
+                        <h3 class="certification-title">Honours Diploma in Full Stack Development (HFSD)</h3>
+                        <span class="certification-issuer">CSC Computer Education Pvt Ltd</span>
+                    </div>
+                    
+                    <!-- Cert 2 -->
+                    <div class="certification-card">
+                        <div class="certification-icon-wrapper">
+                            <i class="fa-solid fa-award" style="color: var(--primary);"></i>
+                        </div>
+                        <h3 class="certification-title">One Million Prompters</h3>
+                        <span class="certification-issuer">Artificial Intelligence & Prompt Engineering</span>
+                    </div>
+                    
+                    <!-- Cert 3 -->
+                    <div class="certification-card">
+                        <div class="certification-icon-wrapper">
+                            <i class="fa-solid fa-award" style="color: var(--primary);"></i>
+                        </div>
+                        <h3 class="certification-title">YUVA AI For All</h3>
+                        <span class="certification-issuer">TCS iON</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section scroll-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="header-icon-box">
+                        <i class="fa-regular fa-comment-dots"></i>
+                    </div>
+                    <div class="header-title-box">
+                        <h2>Let's Connect</h2>
+                        <p class="section-subtitle">I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.</p>
+                    </div>
+                </div>
+                
+                <div class="contact-grid">
+                    <!-- Email Card -->
+                    <a href="mailto:gokulbalraj08@gmail.com" class="contact-card-item card-detailed">
+                        <div class="contact-card-icon-wrapper">
+                            <i class="fa-regular fa-envelope" style="color: var(--primary);"></i>
+                        </div>
+                        <span class="contact-card-label">DROP ME A MESSAGE</span>
+                        <span class="contact-card-value">gokulbalraj08@gmail.com</span>
+                    </a>
+                    
+                    <!-- GitHub Card -->
+                    <a href="https://github.com/gokul-2008" target="_blank" class="contact-card-item card-simple">
+                        <div class="contact-card-icon-wrapper">
+                            <i class="fa-brands fa-github" style="color: #0f172a;"></i>
+                        </div>
+                        <span class="contact-card-title">GitHub</span>
+                    </a>
+                    
+                    <!-- LinkedIn Card -->
+                    <a href="https://www.linkedin.com/in/gokul-b-6595ba37a/" target="_blank" class="contact-card-item card-simple">
+                        <div class="contact-card-icon-wrapper">
+                            <i class="fa-brands fa-linkedin-in" style="color: #0a66c2;"></i>
+                        </div>
+                        <span class="contact-card-title">LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Footer -->
+    
+    <footer class="footer" style="margin-top: 20px;">
+        <div class="footer-container" style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+            <p class="copyright">&copy; 2026 GOKUL B.ALL RIGHTS RESERVED</p>
+            <div class="footer-links">
+                <a href="#home" style="text-decoration: none; color: #0066cc; font-size: 14px; font-weight: bold;">Back to Top</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
